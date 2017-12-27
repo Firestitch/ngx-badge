@@ -1,0 +1,39 @@
+:host {
+  display: inline;
+}
+
+.fs-badge {
+  display: inline-block;
+  height: 20px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.fs-badge.fs-badge-text {
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 1px 4px 1px 3px;
+  min-width: 45px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.fs-badge.fs-badge-circle {
+  min-width: 32px;
+  height: 32px;
+  width: 32px;
+  padding: 0;
+  line-height: 32px;
+  border-radius: 50%;
+}
+
+.fs-badge.fs-badge-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.fs-badge .material-icons {
+  line-height: 95%;
+  vertical-align: middle;
+}
