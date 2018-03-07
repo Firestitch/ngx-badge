@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app/app.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { FsComponentModule } from '../src';
+import { FsBadgeModule } from '../src';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app/material.module';
 import { FsExampleModule } from '@firestitch/example';
@@ -16,7 +16,7 @@ import { IconExampleComponent } from './app/components/icon-example/icon-example
   bootstrap: [ AppComponent ],
   imports: [
     BrowserModule,
-    FsComponentModule,
+    FsBadgeModule,
     BrowserAnimationsModule,
     AppMaterialModule,
     FormsModule,

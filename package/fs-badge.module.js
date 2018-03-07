@@ -10,17 +10,17 @@ var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var material_1 = require("@angular/material");
 var fs_badge_component_1 = require("./components/fs-badge/fs-badge.component");
-var FsComponentModule = (function () {
-    function FsComponentModule() {
+var FsBadgeModule = (function () {
+    function FsBadgeModule() {
     }
-    FsComponentModule_1 = FsComponentModule;
-    FsComponentModule.forRoot = function () {
+    FsBadgeModule_1 = FsBadgeModule;
+    FsBadgeModule.forRoot = function () {
         return {
-            ngModule: FsComponentModule_1,
+            ngModule: FsBadgeModule_1,
             providers: []
         };
     };
-    FsComponentModule = FsComponentModule_1 = __decorate([
+    FsBadgeModule = FsBadgeModule_1 = __decorate([
         core_1.NgModule({
             imports: [
                 common_1.CommonModule,
@@ -36,9 +36,9 @@ var FsComponentModule = (function () {
             ],
             providers: [],
         })
-    ], FsComponentModule);
-    return FsComponentModule;
-    var FsComponentModule_1;
+    ], FsBadgeModule);
+    return FsBadgeModule;
+    var FsBadgeModule_1;
 }());
-exports.FsComponentModule = FsComponentModule;
+exports.FsBadgeModule = FsBadgeModule;
 //# sourceMappingURL=fs-badge.module.js.map

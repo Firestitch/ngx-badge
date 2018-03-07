@@ -167,17 +167,17 @@ var core_1 = __webpack_require__("../node_modules/@angular/core/esm2015/core.js"
 var common_1 = __webpack_require__("../node_modules/@angular/common/esm2015/common.js");
 var material_1 = __webpack_require__("../node_modules/@angular/material/esm2015/material.js");
 var fs_badge_component_1 = __webpack_require__("../src/components/fs-badge/fs-badge.component.ts");
-var FsComponentModule = (function () {
-    function FsComponentModule() {
+var FsBadgeModule = (function () {
+    function FsBadgeModule() {
     }
-    FsComponentModule_1 = FsComponentModule;
-    FsComponentModule.forRoot = function () {
+    FsBadgeModule_1 = FsBadgeModule;
+    FsBadgeModule.forRoot = function () {
         return {
-            ngModule: FsComponentModule_1,
+            ngModule: FsBadgeModule_1,
             providers: []
         };
     };
-    FsComponentModule = FsComponentModule_1 = __decorate([
+    FsBadgeModule = FsBadgeModule_1 = __decorate([
         core_1.NgModule({
             imports: [
                 common_1.CommonModule,
@@ -193,11 +193,11 @@ var FsComponentModule = (function () {
             ],
             providers: [],
         })
-    ], FsComponentModule);
-    return FsComponentModule;
-    var FsComponentModule_1;
+    ], FsBadgeModule);
+    return FsBadgeModule;
+    var FsBadgeModule_1;
 }());
-exports.FsComponentModule = FsComponentModule;
+exports.FsBadgeModule = FsBadgeModule;
 
 
 /***/ }),
@@ -557,7 +557,7 @@ var PlaygroundModule = (function () {
             bootstrap: [app_component_1.AppComponent],
             imports: [
                 platform_browser_1.BrowserModule,
-                src_1.FsComponentModule,
+                src_1.FsBadgeModule,
                 animations_1.BrowserAnimationsModule,
                 material_module_1.AppMaterialModule,
                 forms_1.FormsModule,
