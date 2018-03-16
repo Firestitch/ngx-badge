@@ -8,7 +8,7 @@ exports = module.exports = __webpack_require__("../node_modules/css-loader/lib/c
 
 
 // module
-exports.push([module.i, ".fs-badge {\n  display: inline-block;\n  height: 20px;\n  border-radius: 3px;\n  text-align: center;\n}\n\n.fs-badge.fs-badge-text {\n  line-height: 20px;\n  text-transform: uppercase;\n  padding: 1px 4px 1px 3px;\n  min-width: 45px;\n  color: #fff;\n  font-size: 14px;\n}\n\n.fs-badge.fs-badge-circle {\n  min-width: 32px;\n  height: 32px;\n  width: 32px;\n  padding: 0;\n  line-height: 32px;\n  border-radius: 50%;\n}\n\n.fs-badge.fs-badge-image {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50% 50%;\n}\n\n.fs-badge .material-icons {\n  line-height: 95%;\n  vertical-align: middle;\n}\n\n", "", {"version":3,"sources":["C:/Projects/fs-badge/src/components/fs-badge/C:/Projects/fs-badge/src/components/fs-badge/src/components/fs-badge/fs-badge.component.scss","C:/Projects/fs-badge/src/components/fs-badge/C:/Projects/fs-badge/fs-badge.component.scss"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,aAAA;EACA,mBAAA;EAEA,mBAAA;CCAD;;ADEC;EACE,kBAAA;EACA,0BAAA;EACA,yBAAA;EACA,gBAAA;EACA,YAAA;EACA,gBAAA;CCCH;;ADdD;EAiBI,gBAAA;EACA,aAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;EACA,mBAAA;CCCH;;ADvBD;EA0BI,6BAAA;EACA,uBAAA;EACA,6BAAA;CCCH;;AD7BD;EAgCI,iBAAA;EACA,uBAAA;CCCH","file":"fs-badge.component.scss","sourcesContent":[".fs-badge {\n  display: inline-block;\n  height: 20px;\n  border-radius: 3px;\n\n  text-align: center;\n\n  &.fs-badge-text {\n    line-height: 20px;\n    text-transform: uppercase;\n    padding: 1px 4px 1px 3px;\n    min-width: 45px;\n    color: #fff;\n    font-size: 14px;\n  }\n\n  &.fs-badge-circle {\n    min-width: 32px;\n    height: 32px;\n    width: 32px;\n    padding: 0;\n    line-height: 32px;\n    border-radius: 50%;\n  }\n\n  &.fs-badge-image {\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: 50% 50%;\n  }\n\n  .material-icons {\n    line-height: 95%;\n    vertical-align: middle;\n  }\n}\n",".fs-badge {\n  display: inline-block;\n  height: 20px;\n  border-radius: 3px;\n  text-align: center;\n}\n\n.fs-badge.fs-badge-text {\n  line-height: 20px;\n  text-transform: uppercase;\n  padding: 1px 4px 1px 3px;\n  min-width: 45px;\n  color: #fff;\n  font-size: 14px;\n}\n\n.fs-badge.fs-badge-circle {\n  min-width: 32px;\n  height: 32px;\n  width: 32px;\n  padding: 0;\n  line-height: 32px;\n  border-radius: 50%;\n}\n\n.fs-badge.fs-badge-image {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50% 50%;\n}\n\n.fs-badge .material-icons {\n  line-height: 95%;\n  vertical-align: middle;\n}\n\n"],"sourceRoot":""}]);
+exports.push([module.i, ".fs-badge {\n  display: inline-block;\n  height: 20px;\n  border-radius: 3px;\n  text-align: center;\n}\n\n.fs-badge.fs-badge-text {\n  line-height: 20px;\n  text-transform: uppercase;\n  padding: 1px 4px 1px 3px;\n  min-width: 45px;\n  color: #fff;\n  font-size: 14px;\n}\n\n.fs-badge.fs-badge-circle {\n  min-width: 32px;\n  height: 32px;\n  width: 32px;\n  padding: 0;\n  line-height: 32px;\n  border-radius: 50%;\n}\n\n.fs-badge.fs-badge-image {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50% 50%;\n}\n\n.fs-badge .material-icons {\n  line-height: 95%;\n  vertical-align: middle;\n}\n\n", "", {"version":3,"sources":["/Users/mendor/work/fs-badge/src/components/fs-badge/src/components/fs-badge/fs-badge.component.scss","/Users/mendor/work/fs-badge/fs-badge.component.scss"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,aAAA;EACA,mBAAA;EAEA,mBAAA;CCAD;;ADEC;EACE,kBAAA;EACA,0BAAA;EACA,yBAAA;EACA,gBAAA;EACA,YAAA;EACA,gBAAA;CCCH;;ADdD;EAiBI,gBAAA;EACA,aAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;EACA,mBAAA;CCCH;;ADvBD;EA0BI,6BAAA;EACA,uBAAA;EACA,6BAAA;CCCH;;AD7BD;EAgCI,iBAAA;EACA,uBAAA;CCCH","file":"fs-badge.component.scss","sourcesContent":[".fs-badge {\n  display: inline-block;\n  height: 20px;\n  border-radius: 3px;\n\n  text-align: center;\n\n  &.fs-badge-text {\n    line-height: 20px;\n    text-transform: uppercase;\n    padding: 1px 4px 1px 3px;\n    min-width: 45px;\n    color: #fff;\n    font-size: 14px;\n  }\n\n  &.fs-badge-circle {\n    min-width: 32px;\n    height: 32px;\n    width: 32px;\n    padding: 0;\n    line-height: 32px;\n    border-radius: 50%;\n  }\n\n  &.fs-badge-image {\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: 50% 50%;\n  }\n\n  .material-icons {\n    line-height: 95%;\n    vertical-align: middle;\n  }\n}\n",".fs-badge {\n  display: inline-block;\n  height: 20px;\n  border-radius: 3px;\n  text-align: center;\n}\n\n.fs-badge.fs-badge-text {\n  line-height: 20px;\n  text-transform: uppercase;\n  padding: 1px 4px 1px 3px;\n  min-width: 45px;\n  color: #fff;\n  font-size: 14px;\n}\n\n.fs-badge.fs-badge-circle {\n  min-width: 32px;\n  height: 32px;\n  width: 32px;\n  padding: 0;\n  line-height: 32px;\n  border-radius: 50%;\n}\n\n.fs-badge.fs-badge-image {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50% 50%;\n}\n\n.fs-badge .material-icons {\n  line-height: 95%;\n  vertical-align: middle;\n}\n\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -167,17 +167,17 @@ var core_1 = __webpack_require__("../node_modules/@angular/core/esm2015/core.js"
 var common_1 = __webpack_require__("../node_modules/@angular/common/esm2015/common.js");
 var material_1 = __webpack_require__("../node_modules/@angular/material/esm2015/material.js");
 var fs_badge_component_1 = __webpack_require__("../src/components/fs-badge/fs-badge.component.ts");
-var FsComponentModule = (function () {
-    function FsComponentModule() {
+var FsBadgeModule = (function () {
+    function FsBadgeModule() {
     }
-    FsComponentModule_1 = FsComponentModule;
-    FsComponentModule.forRoot = function () {
+    FsBadgeModule_1 = FsBadgeModule;
+    FsBadgeModule.forRoot = function () {
         return {
-            ngModule: FsComponentModule_1,
+            ngModule: FsBadgeModule_1,
             providers: []
         };
     };
-    FsComponentModule = FsComponentModule_1 = __decorate([
+    FsBadgeModule = FsBadgeModule_1 = __decorate([
         core_1.NgModule({
             imports: [
                 common_1.CommonModule,
@@ -193,11 +193,11 @@ var FsComponentModule = (function () {
             ],
             providers: [],
         })
-    ], FsComponentModule);
-    return FsComponentModule;
-    var FsComponentModule_1;
+    ], FsBadgeModule);
+    return FsBadgeModule;
+    var FsBadgeModule_1;
 }());
-exports.FsComponentModule = FsComponentModule;
+exports.FsBadgeModule = FsBadgeModule;
 
 
 /***/ }),
@@ -244,7 +244,7 @@ webpackEmptyAsyncContext.id = "../tools lazy recursive";
 /***/ "../tools/components/examples/examples.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-title\">{{title}}</div>\r\n<mat-tab-group>\r\n  <mat-tab label=\"Examples\">\r\n      <div class=\"examples-body\">\r\n        <ng-content></ng-content>\r\n      </div>\r\n  </mat-tab>\r\n  <mat-tab label=\"Docs\" *ngIf=\"loaded\">\r\n    <div class=\"iframe-container\">\r\n      <iframe class=\"iframe-example ng-star-inserted\" [src]=\"submoduleUrl\"></iframe>\r\n    </div>\r\n  </mat-tab>\r\n</mat-tab-group>\r\n"
+module.exports = "<div class=\"example-title\">{{title}}</div>\n<mat-tab-group>\n  <mat-tab label=\"Examples\">\n      <div class=\"examples-body\">\n        <ng-content></ng-content>\n      </div>\n  </mat-tab>\n  <mat-tab label=\"Docs\" *ngIf=\"loaded\">\n    <div class=\"iframe-container\">\n      <iframe class=\"iframe-example ng-star-inserted\" [src]=\"submoduleUrl\"></iframe>\n    </div>\n  </mat-tab>\n</mat-tab-group>\n"
 
 /***/ }),
 
@@ -557,7 +557,7 @@ var PlaygroundModule = (function () {
             bootstrap: [app_component_1.AppComponent],
             imports: [
                 platform_browser_1.BrowserModule,
-                src_1.FsComponentModule,
+                src_1.FsBadgeModule,
                 animations_1.BrowserAnimationsModule,
                 material_module_1.AppMaterialModule,
                 forms_1.FormsModule,

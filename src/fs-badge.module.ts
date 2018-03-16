@@ -22,10 +22,10 @@ import { FsBadgeComponent } from './components/fs-badge/fs-badge.component';
 
   ],
 })
-export class FsComponentModule {
+export class FsBadgeModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: FsComponentModule,
+      ngModule: FsBadgeModule,
       providers: []
     };
   }
