@@ -10,6 +10,8 @@ import { AppMaterialModule } from './app/material.module';
 import { FsExampleModule } from '@firestitch/example';
 import { ImageExampleComponent } from './app/components/image-example/image-example.component';
 import { IconExampleComponent } from './app/components/icon-example/icon-example.component';
+import { TextExampleComponent } from './app/components/text-example/text-example.component';
+
 
 @NgModule({
   bootstrap: [ AppComponent ],
@@ -26,7 +28,8 @@ import { IconExampleComponent } from './app/components/icon-example/icon-example
   declarations: [
     AppComponent,
     ImageExampleComponent,
-    IconExampleComponent
+    IconExampleComponent,
+    TextExampleComponent
   ],
   providers: [
   ],

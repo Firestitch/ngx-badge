@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, OnChanges } from '@angular/core';
 
+
 @Component({
     selector: 'fs-badge',
     templateUrl: './fs-badge.component.html',
@@ -8,7 +9,7 @@ import { Component, Input, OnInit, OnChanges } from '@angular/core';
 export class FsBadgeComponent implements OnInit, OnChanges {
 
   @Input('color') color;
-  @Input('label') label;
+  @Input() text = '';
   @Input('tooltip') tooltip;
   @Input('size') size;
   @Input('shape') shape = 'circle';
@@ -17,9 +18,9 @@ export class FsBadgeComponent implements OnInit, OnChanges {
   @Input('iconSize') iconSize;
   @Input('iconColor') iconColor;
 
-  styles = {};
+  styles: any = {};
   type: string;
-  iconStyle = {};
+  iconStyle: any = {};
 
   constructor() { }
 
@@ -28,11 +29,11 @@ export class FsBadgeComponent implements OnInit, OnChanges {
 
     this.iconStyle = {};
     if (this.iconSize) {
-      this.iconStyle['transform'] = 'scale(' + this.iconSize + ')';
+      this.iconStyle.transform = 'scale(' + this.iconSize + ')';
     }
 
     if (this.iconColor) {
-      this.iconStyle['color'] = this.iconColor;
+      this.iconStyle.color = this.iconColor;
     }
   }
 
@@ -44,12 +45,16 @@ export class FsBadgeComponent implements OnInit, OnChanges {
     }
 
     if (this.size) {
-        this.styles['width'] = this.size + 'px';
+        this.styles.width = this.size + 'px';
         this.styles['min-width'] = this.size + 'px';
 
         if (this.shape === 'circle') {
-            this.styles['height'] = this.size + 'px';
+            this.styles.height = this.size + 'px';
             this.styles['line-height'] = this.size + 'px';
+        }
+
+        if (this.text) {
+          this.styles['font-size'] = (this.size / 2.5) + 'px';
         }
     }
 
