@@ -1,7 +1,7 @@
 import { OnInit, OnChanges } from '@angular/core';
 export declare class FsBadgeComponent implements OnInit, OnChanges {
     color: any;
-    label: any;
+    text: string;
     tooltip: any;
     size: any;
     shape: string;
@@ -9,9 +9,9 @@ export declare class FsBadgeComponent implements OnInit, OnChanges {
     icon: any;
     iconSize: any;
     iconColor: any;
-    styles: {};
+    styles: any;
     type: string;
-    iconStyle: {};
+    iconStyle: any;
     constructor();
     ngOnInit(): void;
     ngOnChanges(changes: any): void;

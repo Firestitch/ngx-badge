@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var FsBadgeComponent = (function () {
     function FsBadgeComponent() {
+        this.text = '';
         this.shape = 'circle';
         this.styles = {};
         this.iconStyle = {};
@@ -20,10 +21,10 @@ var FsBadgeComponent = (function () {
         this.type = this.image ? 'image' : 'text';
         this.iconStyle = {};
         if (this.iconSize) {
-            this.iconStyle['transform'] = 'scale(' + this.iconSize + ')';
+            this.iconStyle.transform = 'scale(' + this.iconSize + ')';
         }
         if (this.iconColor) {
-            this.iconStyle['color'] = this.iconColor;
+            this.iconStyle.color = this.iconColor;
         }
     };
     FsBadgeComponent.prototype.ngOnChanges = function (changes) {
@@ -32,11 +33,14 @@ var FsBadgeComponent = (function () {
             this.styles['background-color'] = this.color;
         }
         if (this.size) {
-            this.styles['width'] = this.size + 'px';
+            this.styles.width = this.size + 'px';
             this.styles['min-width'] = this.size + 'px';
             if (this.shape === 'circle') {
-                this.styles['height'] = this.size + 'px';
+                this.styles.height = this.size + 'px';
                 this.styles['line-height'] = this.size + 'px';
+            }
+            if (this.text) {
+                this.styles['font-size'] = (this.size / 2.5) + 'px';
             }
         }
         if (this.image) {
@@ -48,9 +52,9 @@ var FsBadgeComponent = (function () {
         __metadata("design:type", Object)
     ], FsBadgeComponent.prototype, "color", void 0);
     __decorate([
-        core_1.Input('label'),
+        core_1.Input(),
         __metadata("design:type", Object)
-    ], FsBadgeComponent.prototype, "label", void 0);
+    ], FsBadgeComponent.prototype, "text", void 0);
     __decorate([
         core_1.Input('tooltip'),
         __metadata("design:type", Object)

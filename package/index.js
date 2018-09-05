@@ -83,7 +83,7 @@ exports = module.exports = __webpack_require__("../node_modules/css-loader/lib/c
 
 
 // module
-exports.push([module.i, ".fs-badge {\n  display: inline-block;\n  height: 20px;\n  border-radius: 3px;\n  text-align: center;\n}\n\n.fs-badge.fs-badge-text {\n  line-height: 20px;\n  text-transform: uppercase;\n  padding: 1px 4px 1px 3px;\n  min-width: 45px;\n  color: #fff;\n  font-size: 14px;\n}\n\n.fs-badge.fs-badge-circle {\n  min-width: 32px;\n  height: 32px;\n  width: 32px;\n  padding: 0;\n  line-height: 32px;\n  border-radius: 50%;\n}\n\n.fs-badge.fs-badge-image {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50% 50%;\n}\n\n.fs-badge .material-icons {\n  line-height: 95%;\n  vertical-align: middle;\n}\n\n", "", {"version":3,"sources":["C:/Projects/fs-badge/src/components/fs-badge/C:/Projects/fs-badge/src/components/fs-badge/src/components/fs-badge/fs-badge.component.scss","C:/Projects/fs-badge/src/components/fs-badge/C:/Projects/fs-badge/fs-badge.component.scss"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,aAAA;EACA,mBAAA;EAEA,mBAAA;CCAD;;ADEC;EACE,kBAAA;EACA,0BAAA;EACA,yBAAA;EACA,gBAAA;EACA,YAAA;EACA,gBAAA;CCCH;;ADdD;EAiBI,gBAAA;EACA,aAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;EACA,mBAAA;CCCH;;ADvBD;EA0BI,6BAAA;EACA,uBAAA;EACA,6BAAA;CCCH;;AD7BD;EAgCI,iBAAA;EACA,uBAAA;CCCH","file":"fs-badge.component.scss","sourcesContent":[".fs-badge {\n  display: inline-block;\n  height: 20px;\n  border-radius: 3px;\n\n  text-align: center;\n\n  &.fs-badge-text {\n    line-height: 20px;\n    text-transform: uppercase;\n    padding: 1px 4px 1px 3px;\n    min-width: 45px;\n    color: #fff;\n    font-size: 14px;\n  }\n\n  &.fs-badge-circle {\n    min-width: 32px;\n    height: 32px;\n    width: 32px;\n    padding: 0;\n    line-height: 32px;\n    border-radius: 50%;\n  }\n\n  &.fs-badge-image {\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: 50% 50%;\n  }\n\n  .material-icons {\n    line-height: 95%;\n    vertical-align: middle;\n  }\n}\n",".fs-badge {\n  display: inline-block;\n  height: 20px;\n  border-radius: 3px;\n  text-align: center;\n}\n\n.fs-badge.fs-badge-text {\n  line-height: 20px;\n  text-transform: uppercase;\n  padding: 1px 4px 1px 3px;\n  min-width: 45px;\n  color: #fff;\n  font-size: 14px;\n}\n\n.fs-badge.fs-badge-circle {\n  min-width: 32px;\n  height: 32px;\n  width: 32px;\n  padding: 0;\n  line-height: 32px;\n  border-radius: 50%;\n}\n\n.fs-badge.fs-badge-image {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50% 50%;\n}\n\n.fs-badge .material-icons {\n  line-height: 95%;\n  vertical-align: middle;\n}\n\n"],"sourceRoot":""}]);
+exports.push([module.i, ".fs-badge {\n  display: inline-block;\n  height: 20px;\n  border-radius: 3px;\n  text-align: center;\n}\n\n.fs-badge.fs-badge-text {\n  line-height: 20px;\n  text-transform: uppercase;\n  padding: 1px 4px 1px 3px;\n  min-width: 45px;\n  color: #fff;\n  font-size: 14px;\n}\n\n.fs-badge.fs-badge-circle {\n  min-width: 32px;\n  height: 32px;\n  width: 32px;\n  padding: 0;\n  line-height: 32px;\n  border-radius: 50%;\n}\n\n.fs-badge.fs-badge-image {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50% 50%;\n}\n\n.fs-badge .material-icons {\n  line-height: 95%;\n  vertical-align: middle;\n}\n\n", "", {"version":3,"sources":["/Users/mendor/work/fs-badge/src/components/fs-badge/src/components/fs-badge/fs-badge.component.scss","/Users/mendor/work/fs-badge/fs-badge.component.scss"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,aAAA;EACA,mBAAA;EAEA,mBAAA;CCAD;;ADEC;EACE,kBAAA;EACA,0BAAA;EACA,yBAAA;EACA,gBAAA;EACA,YAAA;EACA,gBAAA;CCCH;;ADdD;EAiBI,gBAAA;EACA,aAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;EACA,mBAAA;CCCH;;ADvBD;EA0BI,6BAAA;EACA,uBAAA;EACA,6BAAA;CCCH;;AD7BD;EAgCI,iBAAA;EACA,uBAAA;CCCH","file":"fs-badge.component.scss","sourcesContent":[".fs-badge {\n  display: inline-block;\n  height: 20px;\n  border-radius: 3px;\n\n  text-align: center;\n\n  &.fs-badge-text {\n    line-height: 20px;\n    text-transform: uppercase;\n    padding: 1px 4px 1px 3px;\n    min-width: 45px;\n    color: #fff;\n    font-size: 14px;\n  }\n\n  &.fs-badge-circle {\n    min-width: 32px;\n    height: 32px;\n    width: 32px;\n    padding: 0;\n    line-height: 32px;\n    border-radius: 50%;\n  }\n\n  &.fs-badge-image {\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: 50% 50%;\n  }\n\n  .material-icons {\n    line-height: 95%;\n    vertical-align: middle;\n  }\n}\n",".fs-badge {\n  display: inline-block;\n  height: 20px;\n  border-radius: 3px;\n  text-align: center;\n}\n\n.fs-badge.fs-badge-text {\n  line-height: 20px;\n  text-transform: uppercase;\n  padding: 1px 4px 1px 3px;\n  min-width: 45px;\n  color: #fff;\n  font-size: 14px;\n}\n\n.fs-badge.fs-badge-circle {\n  min-width: 32px;\n  height: 32px;\n  width: 32px;\n  padding: 0;\n  line-height: 32px;\n  border-radius: 50%;\n}\n\n.fs-badge.fs-badge-image {\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50% 50%;\n}\n\n.fs-badge .material-icons {\n  line-height: 95%;\n  vertical-align: middle;\n}\n\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -176,7 +176,7 @@ function toComment(sourceMap) {
 /***/ "./components/fs-badge/fs-badge.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"fs-badge\"\n  [ngClass]=\"{ 'fs-badge-circle': shape=='circle', 'fs-badge-image': type=='image', 'fs-badge-text': type=='text' }\"\n  [ngStyle]=\"styles\"\n  [matTooltip]=\"tooltip\">\n  <mat-icon *ngIf=\"!image && icon\" [ngStyle]=\"iconStyle\">{{ icon }}</mat-icon>\n  {{ label }}\n</div>\n"
+module.exports = "<div class=\"fs-badge\"\n  [ngClass]=\"{ 'fs-badge-circle': shape=='circle', 'fs-badge-image': type=='image', 'fs-badge-text': type=='text' }\"\n  [ngStyle]=\"styles\"\n  [matTooltip]=\"tooltip\">\n  <mat-icon *ngIf=\"!image && icon\" [ngStyle]=\"iconStyle\">{{ icon }}</mat-icon>\n  {{ text }}\n</div>\n"
 
 /***/ }),
 
@@ -213,6 +213,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("@angular/core");
 var FsBadgeComponent = (function () {
     function FsBadgeComponent() {
+        this.text = '';
         this.shape = 'circle';
         this.styles = {};
         this.iconStyle = {};
@@ -221,10 +222,10 @@ var FsBadgeComponent = (function () {
         this.type = this.image ? 'image' : 'text';
         this.iconStyle = {};
         if (this.iconSize) {
-            this.iconStyle['transform'] = 'scale(' + this.iconSize + ')';
+            this.iconStyle.transform = 'scale(' + this.iconSize + ')';
         }
         if (this.iconColor) {
-            this.iconStyle['color'] = this.iconColor;
+            this.iconStyle.color = this.iconColor;
         }
     };
     FsBadgeComponent.prototype.ngOnChanges = function (changes) {
@@ -233,11 +234,14 @@ var FsBadgeComponent = (function () {
             this.styles['background-color'] = this.color;
         }
         if (this.size) {
-            this.styles['width'] = this.size + 'px';
+            this.styles.width = this.size + 'px';
             this.styles['min-width'] = this.size + 'px';
             if (this.shape === 'circle') {
-                this.styles['height'] = this.size + 'px';
+                this.styles.height = this.size + 'px';
                 this.styles['line-height'] = this.size + 'px';
+            }
+            if (this.text) {
+                this.styles['font-size'] = (this.size / 2.5) + 'px';
             }
         }
         if (this.image) {
@@ -249,9 +253,9 @@ var FsBadgeComponent = (function () {
         __metadata("design:type", Object)
     ], FsBadgeComponent.prototype, "color", void 0);
     __decorate([
-        core_1.Input('label'),
+        core_1.Input(),
         __metadata("design:type", Object)
-    ], FsBadgeComponent.prototype, "label", void 0);
+    ], FsBadgeComponent.prototype, "text", void 0);
     __decorate([
         core_1.Input('tooltip'),
         __metadata("design:type", Object)
