@@ -3,5 +3,5 @@
   [ngStyle]="styles"
   [matTooltip]="tooltip">
   <mat-icon *ngIf="!image && icon" [ngStyle]="iconStyle">{{ icon }}</mat-icon>
-  {{ text }}
+  <ng-container *ngIf="!image && text">{{ text }}</ng-container>
 </div>

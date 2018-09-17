@@ -176,7 +176,7 @@ function toComment(sourceMap) {
 /***/ "./components/fs-badge/fs-badge.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"fs-badge\"\n  [ngClass]=\"{ 'fs-badge-circle': shape=='circle', 'fs-badge-image': type=='image', 'fs-badge-text': type=='text' }\"\n  [ngStyle]=\"styles\"\n  [matTooltip]=\"tooltip\">\n  <mat-icon *ngIf=\"!image && icon\" [ngStyle]=\"iconStyle\">{{ icon }}</mat-icon>\n  {{ text }}\n</div>\n"
+module.exports = "<div class=\"fs-badge\"\n  [ngClass]=\"{ 'fs-badge-circle': shape=='circle', 'fs-badge-image': type=='image', 'fs-badge-text': type=='text' }\"\n  [ngStyle]=\"styles\"\n  [matTooltip]=\"tooltip\">\n  <mat-icon *ngIf=\"!image && icon\" [ngStyle]=\"iconStyle\">{{ icon }}</mat-icon>\n  <ng-container *ngIf=\"!image && text\">{{ text }}</ng-container>\n</div>\n"
 
 /***/ }),
 
