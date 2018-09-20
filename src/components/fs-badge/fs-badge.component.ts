@@ -8,26 +8,30 @@ import { Component, Input, OnInit, OnChanges } from '@angular/core';
 })
 export class FsBadgeComponent implements OnInit, OnChanges {
 
-  @Input('color') color;
-  @Input() text = '';
-  @Input('tooltip') tooltip;
-  @Input('size') size;
-  @Input('shape') shape = 'circle';
-  @Input('image') image;
-  @Input('icon') icon;
-  @Input('iconSize') iconSize;
-  @Input('iconColor') iconColor;
+  @Input() public color;
+  @Input() public text = '';
+  @Input() public tooltip;
+  @Input() public size;
+  @Input() public shape = 'circle';
+  @Input() public image;
+  @Input() public icon;
+  @Input() public iconSize;
+  @Input() public iconColor;
 
-  styles: any = {};
-  type: string;
-  iconStyle: any = {};
+  public styles: any = {};
+  public type: string;
+  public iconStyle: any = {};
 
   constructor() { }
 
-  ngOnInit() {
-    this.type = this.image ? 'image' : 'text';
+  ngOnInit() { }
 
+  ngOnChanges(changes) {
+
+    this.type = this.image ? 'image' : 'text';
+    this.styles = {};
     this.iconStyle = {};
+
     if (this.iconSize) {
       this.iconStyle.transform = 'scale(' + this.iconSize + ')';
     }
@@ -35,10 +39,6 @@ export class FsBadgeComponent implements OnInit, OnChanges {
     if (this.iconColor) {
       this.iconStyle.color = this.iconColor;
     }
-  }
-
-  ngOnChanges(changes) {
-    this.styles = {};
 
     if (this.color) {
         this.styles['background-color'] = this.color;

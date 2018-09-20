@@ -176,7 +176,7 @@ function toComment(sourceMap) {
 /***/ "./components/fs-badge/fs-badge.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"fs-badge\"\n  [ngClass]=\"{ 'fs-badge-circle': shape=='circle', 'fs-badge-image': type=='image', 'fs-badge-text': type=='text' }\"\n  [ngStyle]=\"styles\"\n  [matTooltip]=\"tooltip\">\n  <mat-icon *ngIf=\"!image && icon\" [ngStyle]=\"iconStyle\">{{ icon }}</mat-icon>\n  <ng-container *ngIf=\"!image && text\">{{ text }}</ng-container>\n</div>\n"
+module.exports = "<div class=\"fs-badge\"\n  [ngClass]=\"{ 'fs-badge-circle': shape === 'circle', 'fs-badge-image': type === 'image', 'fs-badge-text': type === 'text' }\"\n  [ngStyle]=\"styles\"\n  [matTooltip]=\"tooltip\">\n  <mat-icon *ngIf=\"!image && icon\" [ngStyle]=\"iconStyle\">{{ icon }}</mat-icon>\n  <ng-container *ngIf=\"!image && text\">{{ text }}</ng-container>\n</div>\n"
 
 /***/ }),
 
@@ -218,8 +218,10 @@ var FsBadgeComponent = (function () {
         this.styles = {};
         this.iconStyle = {};
     }
-    FsBadgeComponent.prototype.ngOnInit = function () {
+    FsBadgeComponent.prototype.ngOnInit = function () { };
+    FsBadgeComponent.prototype.ngOnChanges = function (changes) {
         this.type = this.image ? 'image' : 'text';
+        this.styles = {};
         this.iconStyle = {};
         if (this.iconSize) {
             this.iconStyle.transform = 'scale(' + this.iconSize + ')';
@@ -227,9 +229,6 @@ var FsBadgeComponent = (function () {
         if (this.iconColor) {
             this.iconStyle.color = this.iconColor;
         }
-    };
-    FsBadgeComponent.prototype.ngOnChanges = function (changes) {
-        this.styles = {};
         if (this.color) {
             this.styles['background-color'] = this.color;
         }
@@ -249,7 +248,7 @@ var FsBadgeComponent = (function () {
         }
     };
     __decorate([
-        core_1.Input('color'),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FsBadgeComponent.prototype, "color", void 0);
     __decorate([
@@ -257,31 +256,31 @@ var FsBadgeComponent = (function () {
         __metadata("design:type", Object)
     ], FsBadgeComponent.prototype, "text", void 0);
     __decorate([
-        core_1.Input('tooltip'),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FsBadgeComponent.prototype, "tooltip", void 0);
     __decorate([
-        core_1.Input('size'),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FsBadgeComponent.prototype, "size", void 0);
     __decorate([
-        core_1.Input('shape'),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FsBadgeComponent.prototype, "shape", void 0);
     __decorate([
-        core_1.Input('image'),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FsBadgeComponent.prototype, "image", void 0);
     __decorate([
-        core_1.Input('icon'),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FsBadgeComponent.prototype, "icon", void 0);
     __decorate([
-        core_1.Input('iconSize'),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FsBadgeComponent.prototype, "iconSize", void 0);
     __decorate([
-        core_1.Input('iconColor'),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FsBadgeComponent.prototype, "iconColor", void 0);
     FsBadgeComponent = __decorate([
