@@ -1,10 +1,10 @@
 {
   "name": "@firestitch/badge",
-  "description": "@firestitch/fs-badge",
+  "description": "@firestitch/ngx-badge",
   "version": "0.1.9",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Firestitch/fs-badge"
+    "url": "https://github.com/Firestitch/ngx-badge"
   },
   "author": {
     "name": "Firestitch",
@@ -15,7 +15,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Firestitch/fs-badge/issues"
+    "url": "https://github.com/Firestitch/ngx-badge/issues"
   },
   "scripts": {
     "package": "cd tools && npm run package",
