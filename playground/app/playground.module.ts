@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FsBadgeModule } from '@firestitch/badge';
 import { FsExampleModule } from '@firestitch/example';
+import { FsLabelModule } from '@firestitch/label';
 
 import { AppMaterialModule } from './material.module';
 import { ImageExampleComponent } from './components/image-example/image-example.component';
@@ -22,6 +23,7 @@ import { TextExampleComponent } from './components/text-example/text-example.com
     AppMaterialModule,
     FormsModule,
     FsExampleModule.forRoot(),
+    FsLabelModule
   ],
   entryComponents: [
   ],

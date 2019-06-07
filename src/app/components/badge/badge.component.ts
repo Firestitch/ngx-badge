@@ -17,6 +17,7 @@ export class FsBadgeComponent implements OnInit, OnChanges {
   @Input() public icon;
   @Input() public iconSize;
   @Input() public iconColor;
+  @Input() public backgroundSize;
 
   public styles: any = {};
   public type: string;
@@ -31,6 +32,10 @@ export class FsBadgeComponent implements OnInit, OnChanges {
     this.type = this.image ? 'image' : 'text';
     this.styles = {};
     this.iconStyle = {};
+
+    if (this.backgroundSize) {
+      this.styles['background-size'] = this.backgroundSize;
+    }
 
     if (this.iconSize) {
       this.iconStyle.transform = 'scale(' + this.iconSize + ')';
