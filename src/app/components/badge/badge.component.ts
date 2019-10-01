@@ -1,10 +1,11 @@
-import { Component, Input, OnInit, OnChanges } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit } from '@angular/core';
 
 
 @Component({
-    selector: 'fs-badge',
-    templateUrl: './badge.component.html',
-    styleUrls: ['./badge.component.scss']
+  selector: 'fs-badge',
+  templateUrl: './badge.component.html',
+  styleUrls: ['./badge.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FsBadgeComponent implements OnInit, OnChanges {
 
