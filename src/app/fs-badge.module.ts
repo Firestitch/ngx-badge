@@ -6,21 +6,17 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { FsBadgeComponent } from './components/badge/badge.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    MatIconModule,
-    MatTooltipModule
-  ],
-  exports: [
-    FsBadgeComponent,
-  ],
-  entryComponents: [
-  ],
-  declarations: [
-    FsBadgeComponent,
-  ],
-  providers: [
-
-  ],
+    imports: [
+        CommonModule,
+        MatIconModule,
+        MatTooltipModule
+    ],
+    exports: [
+        FsBadgeComponent,
+    ],
+    declarations: [
+        FsBadgeComponent,
+    ],
+    providers: []
 })
 export class FsBadgeModule {}

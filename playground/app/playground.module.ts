@@ -15,26 +15,23 @@ import { TextExampleComponent } from './components/text-example/text-example.com
 
 
 @NgModule({
-  bootstrap: [ AppComponent ],
-  imports: [
-    BrowserModule,
-    FsBadgeModule,
-    BrowserAnimationsModule,
-    AppMaterialModule,
-    FormsModule,
-    FsExampleModule.forRoot(),
-    FsLabelModule
-  ],
-  entryComponents: [
-  ],
-  declarations: [
-    AppComponent,
-    ImageExampleComponent,
-    IconExampleComponent,
-    TextExampleComponent
-  ],
-  providers: [
-  ],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        FsBadgeModule,
+        BrowserAnimationsModule,
+        AppMaterialModule,
+        FormsModule,
+        FsExampleModule.forRoot(),
+        FsLabelModule
+    ],
+    declarations: [
+        AppComponent,
+        ImageExampleComponent,
+        IconExampleComponent,
+        TextExampleComponent
+    ],
+    providers: []
 })
 export class PlaygroundModule {
 }
