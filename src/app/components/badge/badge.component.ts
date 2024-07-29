@@ -16,8 +16,8 @@ export class FsBadgeComponent implements OnInit, OnChanges {
   @Input() public shape: 'circle' | 'square' = 'circle';
   @Input() public image;
   @Input() public icon;
-  @Input() public iconSize: number = .75;
-  @Input() public iconSizePercent;
+  @Input() public iconSize;
+  @Input() public iconSizePercent = .7;
   @Input() public iconColor: string;
   @Input() public backgroundSize;
 
@@ -39,17 +39,19 @@ export class FsBadgeComponent implements OnInit, OnChanges {
       this.styles['background-size'] = this.backgroundSize;
     }
 
-    if(this.iconSizePercent) {
-      const diff = this.size * this.iconSizePercent;
-      this.iconSize =  diff / 24;
-    }
+    if(this.icon) {
+      if(!this.iconSize && this.iconSizePercent) {
+        const diff = this.size * this.iconSizePercent;
+        this.iconSize =  diff / 24;
+      }
 
-    if (this.iconSize) {
-      this.iconStyle.transform = 'scale(' + this.iconSize + ')';
-    }
+      if (this.iconSize) {
+        this.iconStyle.transform = 'scale(' + this.iconSize + ')';
+      }
 
-    if (this.iconColor) {
-      this.iconStyle.color = this.iconColor;
+      if (this.iconColor) {
+        this.iconStyle.color = this.iconColor;
+      }
     }
 
     if (this.color) {
