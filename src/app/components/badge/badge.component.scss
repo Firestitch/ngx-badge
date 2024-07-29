@@ -13,6 +13,12 @@
     font-size: 14px;
   }
 
+  &.fs-badge-icon {
+    mat-icon {
+      flex-shrink: 0;
+    }
+  }
+
   &.fs-badge-circle, .fs-badge-square {
     min-width: 32px;
     height: 32px;

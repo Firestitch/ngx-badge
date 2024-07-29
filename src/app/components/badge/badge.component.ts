@@ -29,9 +29,7 @@ export class FsBadgeComponent implements OnInit, OnChanges {
 
   public ngOnInit() { }
 
-  public ngOnChanges(changes) {
-
-    this.type = this.image ? 'image' : 'text';
+  public ngOnChanges(changes) {    
     this.styles = {};
     this.iconStyle = {};
 
@@ -40,6 +38,8 @@ export class FsBadgeComponent implements OnInit, OnChanges {
     }
 
     if(this.icon) {
+      this.type = 'icon';
+      
       if(!this.iconSize && this.iconSizePercent) {
         const diff = this.size * this.iconSizePercent;
         this.iconSize =  diff / 24;
@@ -52,6 +52,8 @@ export class FsBadgeComponent implements OnInit, OnChanges {
       if (this.iconColor) {
         this.iconStyle.color = this.iconColor;
       }
+    } else {
+      this.type = this.image ? 'image' : 'text';
     }
 
     if (this.color) {

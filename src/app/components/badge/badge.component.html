@@ -1,5 +1,11 @@
 <div class="fs-badge"
-    [ngClass]="{ 'fs-badge-circle': shape === 'circle', 'fs-badge-square': shape === 'square', 'fs-badge-image': type === 'image', 'fs-badge-text': type === 'text' }"
+    [ngClass]="{ 
+      'fs-badge-circle': shape === 'circle', 
+      'fs-badge-square': shape === 'square', 
+      'fs-badge-image': type === 'image', 
+      'fs-badge-text': type === 'text',
+      'fs-badge-icon': type === 'icon'      
+    }"
     [ngStyle]="styles"
     [matTooltip]="tooltip">
   <mat-icon *ngIf="!image && icon" [ngStyle]="iconStyle">{{ icon }}</mat-icon>
