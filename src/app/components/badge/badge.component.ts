@@ -12,12 +12,13 @@ export class FsBadgeComponent implements OnInit, OnChanges {
   @Input() public color;
   @Input() public text = '';
   @Input() public tooltip;
-  @Input() public size;
-  @Input() public shape = 'circle';
+  @Input() public size: number;
+  @Input() public shape: 'circle' | 'square' = 'circle';
   @Input() public image;
   @Input() public icon;
-  @Input() public iconSize;
-  @Input() public iconColor;
+  @Input() public iconSize: number = .75;
+  @Input() public iconSizePercent;
+  @Input() public iconColor: string;
   @Input() public backgroundSize;
 
   public styles: any = {};
@@ -38,6 +39,11 @@ export class FsBadgeComponent implements OnInit, OnChanges {
       this.styles['background-size'] = this.backgroundSize;
     }
 
+    if(this.iconSizePercent) {
+      const diff = this.size * this.iconSizePercent;
+      this.iconSize =  diff / 24;
+    }
+
     if (this.iconSize) {
       this.iconStyle.transform = 'scale(' + this.iconSize + ')';
     }
@@ -54,7 +60,7 @@ export class FsBadgeComponent implements OnInit, OnChanges {
         this.styles.width = this.size + 'px';
         this.styles['min-width'] = this.size + 'px';
 
-        if (this.shape === 'circle') {
+        if (this.shape === 'circle' || this.shape === 'square') {
             this.styles.height = this.size + 'px';
             this.styles['line-height'] = this.size + 'px';
         }
