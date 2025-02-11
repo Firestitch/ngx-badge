@@ -10,7 +10,7 @@ import { ChangeDetectionStrategy, Component, Input, OnChanges } from '@angular/c
 export class FsBadgeComponent implements OnChanges {
 
   @Input() public color;
-  @Input() public text = '';
+  @Input() public text: string | number = '';
   @Input() public tooltip;
   @Input() public size: number;
   @Input() public shape: 'circle' | 'square' = 'circle';
