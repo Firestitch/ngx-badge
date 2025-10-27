@@ -1,11 +1,21 @@
 import { ChangeDetectionStrategy, Component, Input, OnChanges } from '@angular/core';
+import { NgClass, NgStyle } from '@angular/common';
+import { MatTooltip } from '@angular/material/tooltip';
+import { MatIcon } from '@angular/material/icon';
 
 
 @Component({
-  selector: 'fs-badge',
-  templateUrl: './badge.component.html',
-  styleUrls: ['./badge.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'fs-badge',
+    templateUrl: './badge.component.html',
+    styleUrls: ['./badge.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    imports: [
+        NgClass,
+        NgStyle,
+        MatTooltip,
+        MatIcon,
+    ],
 })
 export class FsBadgeComponent implements OnChanges {
 
