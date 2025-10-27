@@ -6,8 +6,12 @@
       'fs-badge-text': type === 'text',
       'fs-badge-icon': type === 'icon'      
     }"
-    [ngStyle]="styles"
-    [matTooltip]="tooltip">
-  <mat-icon *ngIf="!image && icon" [ngStyle]="iconStyle">{{ icon }}</mat-icon>
-  <ng-container *ngIf="!image && text">{{ text }}</ng-container>
+  [ngStyle]="styles"
+  [matTooltip]="tooltip">
+  @if (!image && icon) {
+    <mat-icon [ngStyle]="iconStyle">{{ icon }}</mat-icon>
+  }
+  @if (!image && text) {
+    {{ text }}
+  }
 </div>
